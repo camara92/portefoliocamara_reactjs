@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Header=()=> {
   return (
-    <Navbar className="light" expand="lg">
+    <Navbar className="light header-page" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
             <img className='rounded' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRb0lOhuAbflByagOfYUg5R8F1zGO1aN4woA&usqp=CAU' alt='logo_du_site'  BorderRadius ={30} width={30}/>
