@@ -2,6 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState , useEffect} from 'react';
+ import logoatlas from '../assets/images/logoatlas.png'
+ import skills from '../assets/images/skills.png'
+ import projects from '../assets/images/project.jpg'
+
 
 const Header=()=> {
   const [activeLink, SetactiveLink] = useState('home'); 
@@ -27,7 +31,7 @@ const Header=()=> {
     <Navbar className={scrolled ? "scrolled" : ""} expand="lg">
       <Container>
         <Navbar.Brand href="#home" >
-            <img className='rounded image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRb0lOhuAbflByagOfYUg5R8F1zGO1aN4woA&usqp=CAU' alt='logo_du_site'/>
+            <img className='rounded image' src={logoatlas} alt='logo_du_site'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className='navbar-toggler-icon'></span>
@@ -40,9 +44,9 @@ const Header=()=> {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href="#"><img src={''} alt='' /></a>
-              <a href="#"><img src={''} alt='' /></a>
-              <a href="#"><img src={''} alt='' /></a>
+              <a href="#"><img src={'skills'} alt='' /></a>
+              <a href="#"><img src={'logoatlas'} alt='' /></a>
+              <a href="#"><img src={'projects'} alt='' /></a>
             </div>
             <button className='vvd' onClick={()=> console.log('Daouda ! ')}>
               <span>Let's connect </span>
